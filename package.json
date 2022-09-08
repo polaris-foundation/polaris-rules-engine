@@ -1,6 +1,6 @@
 {
   "name": "dhos-rules-engine",
-  "description": "dhos rules engine",
+  "description": "Polaris rules engine",
   "private": true,
   "version": "0.2.1",
   "main": "dist/server/server.js",
@@ -36,7 +36,7 @@
       "email": "duncan.booth@sensynehealth.com"
     }
   ],
-  "homepage": "https://github.com/draysontechnologies/dhos-rules-engine",
+  "homepage": "https://github.com/polaris-foundation/polaris-rules-engine",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
