@@ -2599,9 +2599,9 @@ detect-newline@^2.1.0:
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
 dhos-scoring-engine@^1.1.0:
-  version "1.1.1"
-  resolved "https://npm-proxy.fury.io/sensynehealth/~/up/ver_26ZPhv/dhos-scoring-engine-1.1.1.tgz#af793d12418b1ead66a020353dc01f3d5225a8cb"
-  integrity sha1-r3k9EkGLHq1moCA1PcAfPVIlqMs=
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/dhos-scoring-engine/-/dhos-scoring-engine-1.1.2.tgz#45a21f6318e77a43a87714ea72fd0ee4a0445500"
+  integrity sha512-Y8QVCs2c0i0TbkRLEctg3pI0EtoAN3mtYPDYoG0R+6nRuFlG2LVpVzDSd5vT6ZP5GouMSCtwDzsJDcJQU+SjIw==
   dependencies:
     "@babel/polyfill" "^7.2.5"
     dayjs "^1.8.8"
@@ -3019,10 +3019,10 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-events@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/events/-/events-3.1.0.tgz#84279af1b34cb75aa88bf5ff291f6d0bd9b31a59"
-  integrity sha512-Rv+u8MLHNOdMjTAFeT3nCjHn2aGlx435FP/sDHNaRhDEMwyI/aB22Kj2qIN8R0cw3z28psEQLYwxVKLsKrMgWg==
+events@^3.0.0, events@^3.2.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
+  integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
 
 evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
@@ -3682,10 +3682,10 @@ hash-base@^3.0.0:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-hash-it@^4.0.4:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/hash-it/-/hash-it-4.0.5.tgz#67aca6b970da09058b5ad0feb61661d9627f902a"
-  integrity sha512-bVZPdJn9GqaAkmGXcBoWG0MKn99VJYYC1X17UWQUPKFxsUSTYMhzz+RdBzCgtG61iT5IwfunE3NKVFZWkAc/OQ==
+hash-it@^4.0.5:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/hash-it/-/hash-it-4.1.0.tgz#3dee80cfc7ea5a4452f3a79d71240b5e1dd41fb0"
+  integrity sha512-YUXBmvWycqr0qVb7RhNyJ2ItiPNaD5iKZ9moDaxduyfT8I9d79F9Zf8Ts2RAG7g6NPwD8351dSqxsD07tznSmQ==
   dependencies:
     curriable "^1.1.0"
 
@@ -4659,14 +4659,14 @@ json-rules-engine@^2.3.2:
     selectn "^1.1.2"
 
 json-rules-engine@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/json-rules-engine/-/json-rules-engine-5.0.3.tgz#7abc8e56a77b6be02be23d5a0682429ca1de631e"
-  integrity sha512-wadOx73UrW8Mm84DPYp52P1nagDOSM3sJcHIW2F5jrWBTwVPNV6Ka9SnO7ndDSbPetmDmfPz24QRsormbohlrQ==
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/json-rules-engine/-/json-rules-engine-5.3.0.tgz#33a4ad47c96dc0516fac2567d0bec41e09496a45"
+  integrity sha512-v4y3OKAPJF31OUGBQ/t/CVZh0DDWeGyGyPDGAnbXnivFMxWW2H+P2RXyh6PlwfDINCo5iqh5VI2ed6Rcj7CjRg==
   dependencies:
     clone "^2.1.2"
-    events "^3.0.0"
-    hash-it "^4.0.4"
-    jsonpath-plus "^3.0.0"
+    events "^3.2.0"
+    hash-it "^4.0.5"
+    jsonpath-plus "^4.0.0"
     lodash.isobjectlike "^4.0.0"
 
 json-schema-traverse@^0.4.1:
@@ -4710,10 +4710,10 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonpath-plus@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/jsonpath-plus/-/jsonpath-plus-3.0.0.tgz#194ab4792a5e9b4ed27bf442188c8eb7e697a04b"
-  integrity sha512-WQwgWEBgn+SJU1tlDa/GiY5/ngRpa9yrSj8n4BYPHcwoxTDaMEaYCHMOn42hIHHDd3CrUoRr3+HpsK0hCKoxzA==
+jsonpath-plus@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jsonpath-plus/-/jsonpath-plus-4.0.0.tgz#954b69faa3d8b07f30ae2f9e601176a4b0d2806e"
+  integrity sha512-e0Jtg4KAzDJKKwzbLaUtinCn0RZseWBVRTRGihSpvFlM3wTR7ExSp+PTdeTsDrLNJUe7L7JYJe8mblHX5SCT6A==
 
 jsprim@^1.2.2:
   version "1.4.1"
