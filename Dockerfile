@@ -7,8 +7,6 @@ RUN apk update && apk upgrade
 
 WORKDIR /app
 
-ARG CUSTOM_NPM_TOKEN
-
 # Prepare node installation packages
 RUN npm i npm@latest -g
 
@@ -21,8 +19,6 @@ RUN yarn install --production --frozen-lockfile
 #####
 
 FROM basebuilder as sourcetransformer
-
-ARG CUSTOM_NPM_TOKEN
 
 # Add source files
 ADD src/ src/
@@ -41,8 +37,6 @@ RUN yarn licenses generate-disclaimer --silent > dist/licences.txt 2> /dev/null
 # Add in the dev dependencies and run quality checks that can fail the build
 #####
 FROM sourcetransformer as qualitychecker
-
-ARG CUSTOM_NPM_TOKEN
 
 # Lint source and fail on error
 COPY .eslintrc.json .npmrc ./
@@ -64,6 +58,8 @@ RUN rm -f .npmrc
 # Configure basebuilder for production
 #####
 FROM basebuilder as runner
+
+LABEL org.opencontainers.image.source=https://github.com/polaris-foundation/polaris-rules-engine
 
 # Copy dist files from sourcetransformer
 COPY --from=sourcetransformer --chown=node /app/dist dist/
