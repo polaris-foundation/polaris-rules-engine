@@ -11,7 +11,7 @@ WORKDIR /app
 RUN npm i npm@latest -g
 
 # Add deps
-COPY package.json .npmrc yarn.lock tsconfig.json ./
+COPY package.json yarn.lock tsconfig.json ./
 RUN yarn install --production --frozen-lockfile
 
 #####
@@ -39,7 +39,7 @@ RUN yarn licenses generate-disclaimer --silent > dist/licences.txt 2> /dev/null
 FROM sourcetransformer as qualitychecker
 
 # Lint source and fail on error
-COPY .eslintrc.json .npmrc ./
+COPY .eslintrc.json ./
 ADD tests/ tests/
 RUN yarn lint
 
@@ -50,9 +50,6 @@ RUN yarn lint
 
 # Run tests on dist/ and fail on...failure
 #RUN npm test
-
-# REMOVE .npmrc
-RUN rm -f .npmrc
 
 #####
 # Configure basebuilder for production
